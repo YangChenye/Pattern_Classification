@@ -6,14 +6,14 @@ function [solution iter] = BatchPerceptron(Y,tau)
 %   输出：解向量solution，迭代次数iter
 %
 [y_k, d] = size(Y);             %y_k样本数 d样本维数
-a = zeros(1,d);                 %权向量
+a = zeros(1,d);                 %增广权向量
 k_max = 10000;                  %最大迭代次数
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 k = 1;                          %迭代次数
 eta = 1;                        %学习率
 
 theta = 0.001;                  %阈值
-change = 100;                   %每一次迭代对权向量的改变量
+change = 100;                   %每一次迭代对增广权向量的改变量
                                 %为了让循环开始，随便赋个值
 
 while ((k<k_max) & (norm(change)>=theta))
