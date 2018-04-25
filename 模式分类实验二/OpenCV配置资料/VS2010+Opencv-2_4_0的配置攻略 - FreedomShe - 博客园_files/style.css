@@ -1,0 +1,369 @@
+#EntryTag {
+	color: gray; font-size: 9pt; margin-top: 20px;
+}
+.topicListFooter {
+	text-align: right; margin-top: 10px; margin-right: 10px;
+}
+#divRefreshComments {
+	text-align: right; font-size: 9pt; margin-right: 10px; margin-bottom: 5px;
+}
+* {
+	margin: 0px; padding: 0px;
+}
+body {
+	background-image: url("images/background.jpg"); background-attachment: fixed; background-repeat: no-repeat;
+}
+table {
+	border-collapse: collapse; border-spacing: 0px;
+}
+fieldset {
+	border: 0px currentColor;
+}
+img {
+	border: 0px currentColor;
+}
+li {
+	list-style: none;
+}
+h1 {
+	font-size: 100%; font-weight: normal;
+}
+h2 {
+	font-size: 100%; font-weight: normal;
+}
+h3 {
+	font-size: 100%; font-weight: normal;
+}
+h4 {
+	font-size: 100%; font-weight: normal;
+}
+h5 {
+	font-size: 100%; font-weight: normal;
+}
+h6 {
+	font-size: 100%; font-weight: normal;
+}
+a:link {
+	color: black; text-decoration: none;
+}
+a:visited {
+	color: black; text-decoration: none;
+}
+a:hover {
+	color: black; text-decoration: none;
+}
+a:active {
+	color: black; text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+#home {
+	margin: 15px; color: black; line-height: 1.5; padding-top: 30px; padding-right: 25px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; position: relative; word-wrap: break-word; min-width: 950px; box-shadow: 0px 0px 25px black; background-color: white;
+}
+#header {
+	padding-left: 45px; margin-bottom: 15px;
+}
+#blogTitle {
+	margin-bottom: 15px;
+}
+#lnkBlogLogo {
+	left: 0px; width: 20px; height: 120px; display: block; position: absolute; background-color: green;
+}
+#blogLogo {
+	display: none;
+}
+#blogTitle h1 {
+	font-size: 400%;
+}
+#blogTitle h2 {
+	display: none;
+}
+#navigator {
+	
+}
+#navList {
+	overflow: auto; margin-bottom: 10px;
+}
+#navList li {
+	float: left;
+}
+.menu {
+	color: gray !important; font-size: 250%; margin-right: 30px;
+}
+#navList a[href='http://www.cnblogs.com/'] {
+	color: black !important;
+}
+.aHeaderXML {
+	
+}
+.blogStats {
+	text-align: right; color: gray;
+}
+#main {
+	overflow: auto; padding-left: 25px;
+}
+#mainContent .forFlow {
+	padding-right: 250px;
+}
+#mainContent {
+	width: 100%; margin-right: -250px; float: left;
+}
+.day {
+	margin-bottom: 10px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.dayTitle {
+	padding: 3px 15px; margin-bottom: 10px; background-color: rgb(205, 73, 0);
+}
+.dayTitle a {
+	color: white; font-size: 133%;
+}
+.postTitle {
+	background-position: -10px 0px; padding-right: 15px; padding-left: 15px; margin-bottom: 10px; background-image: url("images/logo.png"); background-repeat: repeat-y;
+}
+.postTitle2 {
+	font-size: 200%;
+}
+.postCon {
+	overflow: auto; padding-right: 15px; padding-left: 15px; font-size: 116%; margin-bottom: 5px;
+}
+.postDesc {
+	text-align: right; color: gray; padding-right: 15px; padding-left: 15px; margin-bottom: 5px;
+}
+.postDesc a {
+	color: gray;
+}
+.postSeparator {
+	margin-bottom: 10px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.topicListFooter {
+	margin: 0px; padding-right: 15px; padding-left: 15px;
+}
+.topicListFooter a {
+	color: green;
+}
+#sideBar {
+	width: 225px; float: right;
+}
+#sideBarMain {
+	font-size: 116%;
+}
+#sideBarMain li {
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.newsItem {
+	padding: 15px; border: 1px solid black; margin-bottom: 15px;
+}
+#calendar {
+	padding: 15px; border: 1px solid black; margin-bottom: 15px;
+}
+.Cal {
+	width: 100%; margin-bottom: 10px;
+}
+.CalTitle {
+	width: 100%; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.CalNextPrev a {
+	color: black !important; font-weight: normal !important; background-color: transparent !important;
+}
+.CalDayHeader {
+	border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#calendar a {
+	color: green; font-weight: bold;
+}
+#calendar a:hover {
+	color: white; background-color: green;
+}
+.CalTodayDay {
+	color: rgb(205, 73, 0); font-weight: bold;
+}
+.catListTag {
+	overflow: auto;
+}
+.catListTag li {
+	margin: 0px 4px 6px 0px; overflow: visible !important; float: none; white-space: normal !important; word-break: break-all !important;
+}
+.catListTag a {
+	padding: 1px 3px; color: white; background-color: green;
+}
+.div_my_zzk {
+	position: relative;
+}
+.input_my_zzk {
+	width: 100px; height: auto; padding-right: 0px;
+}
+.btn_my_zzk {
+	border: 0px currentColor; top: 2px; width: auto; height: auto; right: 6px; color: white; position: static; cursor: pointer; background-repeat: no-repeat; background-size: 25px; background-color: green;
+}
+#btnZzk {
+	background-image: none;
+}
+.mySearch input[value='¹È¸èËÑË÷'] {
+	background-image: none;
+}
+#leftcontentcontainer > div {
+	padding: 15px; border: 1px solid black; margin-bottom: 15px;
+}
+.catListTitle {
+	font-size: 200%; margin-bottom: 5px;
+}
+.catListComment {
+	
+}
+.recent_comment_body {
+	color: gray !important; text-indent: 2em; overflow: visible !important; font-size: 85%; white-space: normal !important;
+}
+.recent_comment_author {
+	color: green !important; overflow: visible !important; font-size: 85%; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: dashed; white-space: normal !important;
+}
+#topics {
+	margin-bottom: 10px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.postBody {
+	padding-right: 15px; padding-left: 15px; font-size: 116%; margin-bottom: 5px;
+}
+#cnblogs_post_body {
+	overflow: auto; margin-bottom: 30px;
+}
+#MySignature {
+	padding: 10px; border: 1px solid rgb(232, 231, 208); color: gray; margin-bottom: 10px; box-shadow: 0px 0px 15px #aaa; background-color: rgb(248, 248, 238);
+}
+#BlogPostCategory {
+	margin-bottom: 5px;
+}
+#EntryTag {
+	text-align: right; margin-top: 0px;
+}
+#EntryTag a {
+	padding: 1px 3px; color: white; background-color: green;
+}
+.feedback_area_title {
+	padding: 3px 15px; color: white; font-size: 133%; margin-bottom: 10px; background-color: rgb(205, 73, 0);
+}
+.feedbackItem {
+	padding-right: 15px; padding-left: 15px; margin-bottom: 10px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+.feedbackListSubtitle {
+	margin-bottom: 5px; margin-left: 65px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.feedbackManage {
+	right: 15px; bottom: 0px; position: absolute;
+}
+.feedbackManage a {
+	color: gray;
+}
+.feedbackManage + a[href^='#'] {
+	left: 15px; width: 50px; height: 50px; text-align: center; color: white; font-size: 133%; display: block; position: absolute; background-color: green;
+}
+.louzhu {
+	color: rgb(205, 73, 0);
+}
+.feedbackCon {
+	padding-left: 65px; font-size: 116%; margin-bottom: 35px;
+}
+#comment_nav {
+	padding: 3px 15px; text-align: center; margin-right: 0px; margin-bottom: 10px; background-color: green;
+}
+#comment_nav a {
+	color: white; font-size: 116%;
+}
+.entrylistTitle {
+	padding: 3px 15px; color: white; font-size: 133%; margin-bottom: 10px; background-color: rgb(205, 73, 0);
+}
+.PostListTitle {
+	padding: 3px 15px; color: white; font-size: 133%; margin-bottom: 10px; background-color: rgb(205, 73, 0);
+}
+.thumbTitle {
+	padding: 3px 15px; color: white; font-size: 133%; margin-bottom: 10px; background-color: rgb(205, 73, 0);
+}
+.entrylistDescription {
+	padding: 3px 15px; text-align: right; color: white; margin-bottom: 10px; background-color: green;
+}
+.thumbDescription {
+	padding: 3px 15px; text-align: right; color: white; margin-bottom: 10px; background-color: green;
+}
+.entrylistItem {
+	margin-bottom: 10px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.entrylistPosttitle {
+	background-position: -10px 0px; padding-right: 15px; padding-left: 15px; margin-bottom: 10px; background-image: url("images/logo.png"); background-repeat: repeat-y;
+}
+.entrylistItemTitle {
+	font-size: 200%;
+}
+.entrylistPostSummary {
+	padding-right: 15px; padding-left: 15px; font-size: 116%; margin-bottom: 5px;
+}
+.entrylistItemPostDesc {
+	text-align: right; color: gray; padding-right: 15px; padding-left: 15px; margin-bottom: 5px;
+}
+.entrylistItemPostDesc a {
+	color: gray;
+}
+.entrylist .postSeparator {
+	display: none;
+}
+.PostList {
+	padding-right: 15px; padding-left: 15px; margin-bottom: 10px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.postTitl2 {
+	margin-bottom: 5px; float: left;
+}
+.postDesc2 {
+	color: gray; margin-bottom: 5px; float: right;
+}
+.postText2 {
+	color: gray; clear: both; margin-bottom: 5px;
+}
+.divPhoto {
+	padding: 2px; border: 1px solid green; margin-right: 10px; opacity: 0.5;
+}
+.divPhoto:hover {
+	opacity: 1;
+}
+#footer {
+	text-align: center; padding-top: 10px; padding-bottom: 10px; margin-top: 50px; margin-left: 25px; border-top-color: green; border-top-width: 2px; border-top-style: solid;
+}
+.postBody h1 {
+	margin: 15px auto 2px; font-size: 2em; font-weight: bold; display: block;
+}
+.postBody h2 {
+	margin: 15px auto 2px; font-size: 1.5em; font-weight: bold; display: block;
+}
+.postBody h3 {
+	margin: 15px auto 2px; font-size: 1.17em; font-weight: bold; display: block;
+}
+.postBody h4 {
+	margin: 15px auto 2px; font-weight: bold; display: block;
+}
+.postBody h5 {
+	margin: 15px auto 2px; font-size: 0.83em; font-weight: bold; display: block;
+}
+.postBody h6 {
+	margin: 15px auto 2px; font-size: 0.67em; font-weight: bold;
+}
+.postBody a {
+	padding: 1px 3px; color: green;
+}
+.postBody a:hover {
+	color: white; background-color: green;
+}
+.postBody blockquote {
+	background: url("images/quote.png") no-repeat -75px -20px rgb(240, 240, 240); margin: 20px 0px; padding: 20px 50px; border-radius: 10px;
+}
+.postCon a {
+	padding: 1px 3px; color: green;
+}
+.postCon a:hover {
+	color: white; background-color: green;
+}
+.c_b_p_desc_readmore {
+	color: rgb(205, 73, 0) !important;
+}
+.c_b_p_desc_readmore:hover {
+	color: white !important; background-color: rgb(205, 73, 0) !important;
+}
+.blog_comment_body a {
+	text-decoration: underline;
+}

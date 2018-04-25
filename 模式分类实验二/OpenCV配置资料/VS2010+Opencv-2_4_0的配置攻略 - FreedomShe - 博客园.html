@@ -1,0 +1,221 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0065)http://www.cnblogs.com/freedomshe/archive/2012/04/25/2470540.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=9.0000" 
+http-equiv="X-UA-Compatible">
+
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+<TITLE>VS2010+Opencv-2.4.0的配置攻略 - FreedomShe - 博客园</TITLE><LINK rel="stylesheet" 
+type="text/css" href="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/common.css">
+<LINK id="MainCss" rel="stylesheet" type="text/css" href="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/style.css">
+<LINK rel="stylesheet" type="text/css" href="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/common2.css">
+<LINK rel="stylesheet" type="text/css" href="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/shStyle.css">
+<LINK title="RSS" rel="alternate" type="application/rss+xml" href="http://www.cnblogs.com/freedomshe/rss">
+<LINK title="RSD" rel="EditURI" type="application/rsd+xml" href="http://www.cnblogs.com/freedomshe/rsd.xml">
+<LINK rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.cnblogs.com/freedomshe/wlwmanifest.xml">
+<SCRIPT type="text/javascript" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/jquery.js"></SCRIPT>
+
+<SCRIPT type="text/javascript">
+var currentBlogApp = 'freedomshe';
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/common.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/json2.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/syntaxHighlighter.js"></SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16450"></HEAD>
+<BODY><A name="top"></A><!--done-->
+<DIV id="home">
+<DIV id="header">
+<DIV id="blogTitle"><A id="lnkBlogLogo" href="http://www.cnblogs.com/freedomshe/"><IMG 
+id="blogLogo" alt="返回主页" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/logo.gif"></A><!--done-->
+<H1><A id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/freedomshe/">FreedomShe</A></H1>
+<H2>Yuanbo She's BLOG</H2></DIV><!--end: blogTitle 博客的标题和副标题 -->
+<DIV id="navigator">
+<UL id="navList">
+  <LI><A id="MyLinks1_HomeLink" class="menu" 
+  href="http://www.cnblogs.com/">博客园</A></LI>
+  <LI><A id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/freedomshe/">首页</A></LI>
+  <LI><A class="menu" href="http://q.cnblogs.com/">博问</A></LI>
+  <LI><A class="menu" href="http://home.cnblogs.com/ing/">闪存</A></LI>
+  <LI><A id="MyLinks1_NewPostLink" class="menu" href="http://www.cnblogs.com/freedomshe/admin/EditPosts.aspx?opt=1" 
+  rel="nofollow">新随笔</A></LI>
+  <LI><A id="MyLinks1_ContactLink" class="menu" href="http://space.cnblogs.com/msg/send/FreedomShe" 
+  rel="nofollow">联系</A></LI>
+  <LI><A id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/freedomshe/rss">订阅</A><!--<a id="MyLinks1_XMLLink" class="aHeaderXML" href="http://www.cnblogs.com/freedomshe/rss"><img src="/Skins/Custom/images/rss.gif" alt="订阅" /></a>--></LI>
+  <LI><A id="MyLinks1_Admin" class="menu" href="http://www.cnblogs.com/freedomshe/admin/EditPosts.aspx" 
+  rel="nofollow">管理</A></LI></UL>
+<DIV class="blogStats"><!--done-->随笔- 15&nbsp;文章- 1&nbsp;评论- 67&nbsp;					</DIV><!--end: blogStats --></DIV><!--end: navigator 博客导航栏 -->
+</DIV><!--end: header 头部 -->
+<DIV id="main">
+<DIV id="mainContent">
+<DIV class="forFlow"><!--done-->
+<DIV id="topics">
+<DIV class="post">
+<H1 class="postTitle"><A id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/freedomshe/archive/2012/04/25/2470540.html">VS2010+Opencv-2.4.0的配置攻略</A></H1>
+<DIV class="clear"></DIV>
+<DIV class="postBody">
+<DIV id="cnblogs_post_body">
+<P>摘要：在VS2010环境中应用Opencv，网上找到了很多配置方法，但大多都是老版本的，很多新手面对最新版本的Opencv无从下手，就给新手童鞋写了这么一篇超级详细的配置攻略，贴上来共享。<SPAN 
+style="color: rgb(255, 0, 0);">要强调一点的就是，这种配置方法里使用的Opencv库是直接安装Opencv时候自带的dll库，在你的VS里面是无法调试Opencv的。</SPAN>如果需要调试Opencv，必须应用自己编译出来的Opencv库，具体怎么编译自己的Opencv库，网上有很多例子，再此不再赘述。</P>
+<H1>1、下载软件</H1>
+<P>　　下载OpenCV-2.4.0，双击解压到%opencv%（凡是出现%opencv%的地方均替换为你自己opencv的路径全名，如D:\program\opencv）。</P>
+<P>　　下载VS2010，安装。</P>
+<H1>&nbsp;2、配置OpenCV环境变量</H1>
+<P>　　计算机-&gt;（右键）属性-&gt;高级系统设置-&gt;高级（标签）-&gt;环境变量-&gt;（双击）path（用户，系统里面的path任选其一）-&gt;在变量值里面添加” 
+%opencv%\build\x86\vc10\bin”和”%opencv%\build\common\tbb\ia32\vc10”（里面的%opencv%记得换成自己的opencv路径。例如我的：D:\program\ifly\bin;D:\Program 
+Files (x86)\opencv\build\x86\vc10\bin;D:\Program Files 
+(x86)\opencv\build\common\tbb\ia32\vc10）。</P>
+<P>&nbsp;<IMG style="vertical-align: middle;" alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521370765.png"></P>
+<H1>3、配置工程的opencv依赖（每次新建工程都要重新配置，要执行此步骤请先跳到第4步建立工程）</H1>
+<P>1）、项目（菜单项）-&gt;…属性-&gt;VC++目录：需要配置“包含目录”和“库目录”两项。</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521403569.png"></P>
+<P>2）、配置“包含目录”项：添加行”%opencv%\build\include”即可。</P>
+<P>但在运行别人的opencv项目时，可能别人直接引用了上述目录的子目录路径，如果出现include错误，则再添加”%opencv%\build\include\opencv”和（或）”%opencv%\build\include\opencv2”，即可解决问题。</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521411894.png"></P>
+<P>3）、配置“库目录”项：添加行”%opencv%\build\x86\vc10\lib”即可。</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521415632.png"></P>
+<P>4）、配置连接器：项目（菜单项）-&gt;…属性-&gt;连接器-&gt;输入-&gt;附加依赖项</P>
+<P>针对debug配置添加以下库：</P>
+<P>opencv_calib3d240d.lib</P>
+<P>opencv_contrib240d.lib</P>
+<P>opencv_core240d.lib</P>
+<P>opencv_features2d240d.lib</P>
+<P>opencv_flann240d.lib</P>
+<P>opencv_gpu240d.lib</P>
+<P>opencv_highgui240d.lib</P>
+<P>opencv_imgproc240d.lib</P>
+<P>opencv_legacy240d.lib</P>
+<P>opencv_ml240d.lib</P>
+<P>opencv_objdetect240d.lib</P>
+<P>opencv_ts240d.lib</P>
+<P>opencv_video240d.lib</P>
+<P>如果是release配置（以后再说，只需要添加上面的debug配置就行了现在），则添加：</P>
+<P>opencv_calib3d240.lib</P>
+<P>opencv_contrib240.lib</P>
+<P>opencv_core240.lib</P>
+<P>opencv_features2d240.lib</P>
+<P>opencv_flann240.lib</P>
+<P>opencv_gpu240.lib</P>
+<P>opencv_highgui240.lib</P>
+<P>opencv_imgproc240.lib</P>
+<P>opencv_legacy240.lib</P>
+<P>opencv_ml240.lib</P>
+<P>opencv_objdetect240.lib</P>
+<P>opencv_ts240.lib</P>
+<P>opencv_video240.lib</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521423828.png"></P>
+<H1>4、用VS2010新建控制台工程测试：</H1>
+<P>1）、文件-&gt;新建-&gt;项目-&gt;Visual C++-&gt;Win32 控制台应用程序（输入名称test）</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521442467.png"></P>
+<P>2）、确定-&gt;下一步-&gt;附加选项选“空项目”-&gt;完成</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521460556.png"></P>
+<P>3）、解决方案资源管理器-&gt;源文件（右键）-&gt;添加-&gt;新建项</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521533454.png"></P>
+<P>4）、Visual C++-&gt;C++文件：输入名称test点添加</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521545853.png"></P>
+<P>5）、粘贴下面的代码，保存</P>
+<DIV class="cnblogs_code"><PRE><SPAN style="color: rgb(0, 128, 128);"> 1</SPAN> #include &lt;opencv2\opencv.hpp&gt;
+<SPAN style="color: rgb(0, 128, 128);"> 2</SPAN> #include &lt;iostream&gt;
+<SPAN style="color: rgb(0, 128, 128);"> 3</SPAN> #include &lt;<SPAN style="color: rgb(0, 0, 255);">string</SPAN>&gt;
+<SPAN style="color: rgb(0, 128, 128);"> 4</SPAN> <SPAN style="color: rgb(0, 0, 255);">using</SPAN> <SPAN style="color: rgb(0, 0, 255);">namespace</SPAN><SPAN style="color: rgb(0, 0, 0);"> cv;
+</SPAN><SPAN style="color: rgb(0, 128, 128);"> 5</SPAN> <SPAN style="color: rgb(0, 0, 255);">using</SPAN> <SPAN style="color: rgb(0, 0, 255);">namespace</SPAN><SPAN style="color: rgb(0, 0, 0);"> std;
+</SPAN><SPAN style="color: rgb(0, 128, 128);"> 6</SPAN> <SPAN style="color: rgb(0, 0, 255);">int</SPAN><SPAN style="color: rgb(0, 0, 0);"> main()
+</SPAN><SPAN style="color: rgb(0, 128, 128);"> 7</SPAN> <SPAN style="color: rgb(0, 0, 0);">{
+</SPAN><SPAN style="color: rgb(0, 128, 128);"> 8</SPAN>     Mat img = imread(<SPAN style="color: rgb(128, 0, 0);">"pp</SPAN><SPAN style="color: rgb(128, 0, 0);">.jpg</SPAN><SPAN style="color: rgb(128, 0, 0);">"</SPAN><SPAN style="color: rgb(0, 0, 0);">);
+</SPAN><SPAN style="color: rgb(0, 128, 128);"> 9</SPAN>     <SPAN style="color: rgb(0, 0, 255);">if</SPAN><SPAN style="color: rgb(0, 0, 0);">(img.empty())
+</SPAN><SPAN style="color: rgb(0, 128, 128);">10</SPAN> <SPAN style="color: rgb(0, 0, 0);">    {
+</SPAN><SPAN style="color: rgb(0, 128, 128);">11</SPAN>         cout&lt;&lt;<SPAN style="color: rgb(128, 0, 0);">"</SPAN><SPAN style="color: rgb(128, 0, 0);">error</SPAN><SPAN style="color: rgb(128, 0, 0);">"</SPAN><SPAN style="color: rgb(0, 0, 0);">;
+</SPAN><SPAN style="color: rgb(0, 128, 128);">12</SPAN>         <SPAN style="color: rgb(0, 0, 255);">return</SPAN> -<SPAN style="color: rgb(128, 0, 128);">1</SPAN><SPAN style="color: rgb(0, 0, 0);">;
+</SPAN><SPAN style="color: rgb(0, 128, 128);">13</SPAN> <SPAN style="color: rgb(0, 0, 0);">    }
+</SPAN><SPAN style="color: rgb(0, 128, 128);">14</SPAN>     imshow(<SPAN style="color: rgb(128, 0, 0);">"</SPAN><SPAN style="color: rgb(128, 0, 0);">xx的靓照</SPAN><SPAN style="color: rgb(128, 0, 0);">"</SPAN><SPAN style="color: rgb(0, 0, 0);">,img);
+</SPAN><SPAN style="color: rgb(0, 128, 128);">15</SPAN> <SPAN style="color: rgb(0, 0, 0);">    waitKey();
+</SPAN><SPAN style="color: rgb(0, 128, 128);">16</SPAN> 
+<SPAN style="color: rgb(0, 128, 128);">17</SPAN>     <SPAN style="color: rgb(0, 0, 255);">return</SPAN> <SPAN style="color: rgb(128, 0, 128);">0</SPAN><SPAN style="color: rgb(0, 0, 0);">;
+</SPAN><SPAN style="color: rgb(0, 128, 128);">18</SPAN> }</PRE>
+</DIV>
+<P>6）、把自己的靓照改名为pp.jpg，然后放到工程项目的test文件夹里面（是里面那个test文件夹）</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042521584579.png"></P>
+<P>7）、按照第3步骤的方法配置工程的opencv依赖。</P>
+<P>8）、按F5，如果你的图片出来了就OK了。</P>
+<P><IMG alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2012042617492156.png"></P></DIV>
+<DIV id="MySignature"></DIV>
+<SCRIPT type="text/javascript">
+var isLogined = false;
+var cb_blogId = 88815;
+var cb_entryId = 2470540;
+var cb_blogApp = currentBlogApp;
+var cb_blogUserGuid = "318d9324-a97a-e011-a53f-842b2b196315";
+var cb_entryCreatedDate = '2012/4/25 22:07:00';
+var enableGoogleAd = true;
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+</SCRIPT>
+
+<DIV class="clear"></DIV>
+<DIV id="blog_post_info_block">
+<DIV id="blog_post_info"></DIV>
+<DIV class="clear"></DIV>
+<DIV id="post_next_prev"></DIV></DIV>
+<SCRIPT type="text/javascript">
+    //SyntaxHighlighter.config.strings.expandSource = '<span><img src="http://static.cnblogs.com/images/expand-code.gif" alt="" class="expand-code-icon"/>View Code</span>';
+    $(function () {             
+        fixPostBodyFormat();
+        loadAdUnderPost();
+        loadBlogSignature();
+        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);        
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);        
+    });
+</SCRIPT>
+</DIV>
+<DIV class="postDesc">posted @ <SPAN id="post-date">2012-04-25 22:07</SPAN> <A 
+href="http://www.cnblogs.com/freedomshe/">FreedomShe</A> 阅读(23353) 评论(<SPAN id="post-comment-count">30</SPAN>) 
+ <A href="http://www.cnblogs.com/freedomshe/admin/EditPosts.aspx?postid=2470540" 
+rel="nofollow">编辑</A> <A onclick="AddToWz(2470540);return false;" href="http://www.cnblogs.com/freedomshe/archive/2012/04/25/2470540.html#">收藏</A></DIV></DIV><IMG 
+alt="" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/2470540.jpg" 
+width="1" height="1"></DIV><!--end: topics 文章、评论容器-->
+<DIV id="blog-comments-placeholder"></DIV>
+<SCRIPT type="text/javascript">var commentManager = new blogCommentManager();commentManager.loadComments();</SCRIPT>
+
+<DIV id="comment_form" class="commentform">
+<DIV id="divCommentShow"></DIV>
+<DIV id="comment_nav"><SPAN id="span_refresh_tips"></SPAN><A id="lnk_RefreshComments" 
+onclick="return RefreshCommentList();" href="javascript:void(0);">刷新评论</A><A 
+onclick="return RefreshPage();" href="http://www.cnblogs.com/freedomshe/archive/2012/04/25/2470540.html#">刷新页面</A><A 
+href="http://www.cnblogs.com/freedomshe/archive/2012/04/25/2470540.html#top">返回顶部</A></DIV>
+<DIV id="comment_form_container"></DIV>
+<SCRIPT type="text/javascript">if (typeof commentManager === 'undefined') {
+        commentManager = new blogCommentManager();
+    }
+    commentManager.loadCommentForm();   
+</SCRIPT>
+
+<DIV id="ad_text_under_commentbox" class="ad_text_commentbox"></DIV>
+<DIV id="site_nav_under"><A title="程序员的网上家园" href="http://www.cnblogs.com/" 
+target="_blank">博客园首页</A><A title="程序员问答社区" href="http://q.cnblogs.com/" target="_blank">博问</A><A 
+title="IT新闻" href="http://news.cnblogs.com/" target="_blank">新闻</A><A href="http://home.cnblogs.com/ing/" 
+target="_blank">闪存</A><A href="http://job.cnblogs.com/" 
+target="_blank">程序员招聘</A><A href="http://kb.cnblogs.com/" 
+target="_blank">知识库</A></DIV>
+<DIV id="ad_under_post_holder"></DIV>
+<DIV id="HistoryToday" class="c_ad_block"></DIV>
+</DIV></DIV><!--end: forFlow --></DIV><!--end: mainContent 主体内容容器-->
+<DIV id="sideBar">
+<DIV id="sideBarMain"><!--done-->
+<DIV class="newsItem">
+<H3 class="catListTitle">公告</H3>
+<DIV id="blog-news"></DIV></DIV>
+<DIV style="displya: none;" id="blog-calendar"></DIV>
+<DIV id="leftcontentcontainer">
+<DIV id="blog-sidecolumn"></DIV></DIV></DIV><!--end: sideBarMain --></DIV><!--end: sideBar 侧边栏容器 -->
+<DIV class="clear"></DIV></DIV><!--end: main -->
+<DIV class="clear"></DIV>
+<DIV id="footer"><!--done-->Copyright ©2013 FreedomShe	</DIV><!--end: footer -->
+</DIV><!--end: home 自定义的最大容器 --><!--PageEndHtml Block Begin-->
+<SCRIPT language="JavaScript" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/stat.js"></SCRIPT>
+<!--PageEndHtml Block End-->
+<SCRIPT type="text/javascript" src="VS2010+Opencv-2_4_0的配置攻略%20-%20FreedomShe%20-%20博客园_files/google-analytics.js"></SCRIPT>
+</BODY></HTML>
