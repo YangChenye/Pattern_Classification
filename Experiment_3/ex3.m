@@ -215,3 +215,24 @@
 % disp(['w2的概率密度分别为： ',num2str(p22(1)), ' ', num2str(p22(2)), ' ' , num2str(p22(3))]);
 % disp(['w3的概率密度分别为： ',num2str(p23(1)), ' ', num2str(p23(2)), ' ',  num2str(p23(3))]);
 
+
+clear;clc;
+% pic_rgb = imread('4.png');
+% pic_gray = rgb2gray(pic_rgb);
+pic_gray = imread('7.png');
+pic_re = imresize(pic_gray, [10, 10]);
+vector = pic_re(:);
+max = 20;
+for x=0:1:max
+    pic_re_trans = zeros(10, 10);
+    if x<= 9
+        pic_re_trans(:, 1+x:10) = pic_re(:, 1:10-x);
+    end
+    vector_trans = pic_re_trans(:);
+    y(x+1) = sqrt(sum((vector_trans - double(vector)).^2));
+end
+x = 0:1:max;
+plot(x, y)
+
+
+
