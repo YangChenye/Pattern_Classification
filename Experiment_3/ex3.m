@@ -216,23 +216,60 @@
 % disp(['w3的概率密度分别为： ',num2str(p23(1)), ' ', num2str(p23(2)), ' ',  num2str(p23(3))]);
 
 
-clear;clc;
-% pic_rgb = imread('4.png');
-% pic_gray = rgb2gray(pic_rgb);
-pic_gray = imread('7.png');
-pic_re = imresize(pic_gray, [10, 10]);
-vector = pic_re(:);
-max = 20;
-for x=0:1:max
-    pic_re_trans = zeros(10, 10);
-    if x<= 9
-        pic_re_trans(:, 1+x:10) = pic_re(:, 1:10-x);
-    end
-    vector_trans = pic_re_trans(:);
-    y(x+1) = sqrt(sum((vector_trans - double(vector)).^2));
-end
-x = 0:1:max;
-plot(x, y)
+% clear;clc;
+% % pic_rgb = imread('4.png');
+% % pic_gray = rgb2gray(pic_rgb);
+% pic_gray = imread('7.png');
+% pic_re = imresize(pic_gray, [10, 10]);
+% vector = pic_re(:);
+% max = 20;
+% for x=0:1:max
+%     pic_re_trans = zeros(10, 10);
+%     if x<= 9
+%         pic_re_trans(:, 1+x:10) = pic_re(:, 1:10-x);
+%     end
+%     vector_trans = pic_re_trans(:);
+%     y(x+1) = sqrt(sum((vector_trans - double(vector)).^2));
+% end
+% x = 0:1:max;
+% plot(x, y)
 
+% d = 6;
+% X = unifrnd(-1/2,1/2,1e4,d);    %prototypes
+% Xt = unifrnd(-1/2,1/2,100,d);   %test set
+% 
+% D=size(X,2);N=size(X,1);Nt=size(Xt,1);  
+% for j=1:Nt  
+%     min_dis=1e300;  
+%     for i=1:N  
+%         dis=norm(X(i,:)-Xt(j,:));  
+%         if dis<min_dis  
+%             min_dis=dis;  
+%             neighbor(j)=i;  
+%             Xt(j)=X(i);  
+%         end  
+%     end  
+% end
+% 
+% 
+% D=size(X,2);Nm=size(X,1);Ntt=size(Xt,1);  
+% res=zeros(1,D);  
+% for d=1:D  
+%     for j=1:Nt  
+%         min_dis=1e300;  
+%         for i=1:Nm  
+%             dis=norm(X(i,1:d)-Xt(j,1:d));  
+%             if dis<m_d  
+%                 m_d=dis;  
+%                 neighbor1(d,j)=i;  
+%                 Xt_c1(j)=X_c(i);  
+%             end  
+%         end  
+%         if neighbor1(d,j)==neighbor(j)  
+%             res(d)=res(d)+1;  
+%         end  
+%     end  
+% end  
+% plot(1:d,res(1:d)/Nt);  
 
 
