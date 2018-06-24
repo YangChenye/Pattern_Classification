@@ -272,4 +272,21 @@
 % end  
 % plot(1:d,res(1:d)/Nt);  
 
+function [class]=ce6_a(k,p)  
+C=3;D=3;N=10;  
+min_dis=1e4;  
+for c=1:C  
+    for i=1:N  
+        if k==inf  
+            dis=max(abs(x(c,i,1)-p(1)),max(abs(x(c,i,2)-p(2)),abs(x(c,i,3)-p(3))));  
+        else  
+            dis=(abs(x(c,i,1)-p(1)).^k+abs(x(c,i,2)-p(2)).^k+abs(x(c,i,3)-p(3)).^k).^(1/k);  
+        end  
+        if dis<m_d  
+            m_d=dis;  
+            neighbor=x(c,i,:);  
+            class=c;  
+        end  
+    end  
+end
 
